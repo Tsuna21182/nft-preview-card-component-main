@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display: "Outfit", sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body
+    class="text-display bg-[#0d192bff] flex flex-col gap-10 justify-center items-center h-dvh"
+  >
+    <main class="p-5 bg-[#14253dff] rounded-xl max-w-96">
+      <section class="relative overflow-hidden group rounded-lg">
+        <img
+          src="/images/image-equilibrium.jpg"
+          alt="imagen equilibrium"
+          class="rounded-lg cursor-pointer"
+        />
+        <div
+          class="absolute flex items-center justify-center inset-0 bg-[#00fff7ff] opacity-0 group-hover:opacity-30 transition"
+        >
+          <img src="/images/icon-view.svg" alt="ver" class="w-12 h-12" />
+        </div>
+      </section>
+      <h3
+        class="text-white my-5 text-xl font-semibold hover:text-[#00fff7ff] transition-color duration-300 cursor-pointer"
+      >
+        Equilibrium #3429
+      </h3>
+      <p class="text-[#8bacdaff]">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <section class="flex justify-between my-5">
+        <p class="text-[#00fff7ff] font-bold flex items-center gap-2">
+          <img
+            src="/images/icon-ethereum.svg"
+            alt="icono ethereum"
+            class="h-5"
+          />0.041 ETH
+        </p>
+        <p class="text-[#8bacdaff] font-semibold flex items-center gap-2">
+          <img src="/images/icon-clock.svg" alt="icon clock" />3 days left
+        </p>
+      </section>
+      <div class="w-full h-0.5 bg-[#2f415bff]"></div>
+      <section class="flex items-center gap-5 my-5">
+        <img
+          src="/images/image-avatar.png"
+          alt="imagen avatar"
+          class="w-10 border-1 border-white rounded-full"
+        />
+        <p class="text-[#8bacdaff] font-semibold">
+          Creation of
+          <span
+            class="text-white font-normal hover:text-[#00fff7ff] transition-color duration-300 cursor-pointer"
+            >Jules Wyvern</span
+          >
+        </p>
+      </section>
+    </main>
+
+    <div class="text-white">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
